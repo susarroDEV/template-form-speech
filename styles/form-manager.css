@@ -247,7 +247,7 @@
   box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.15) !important;
 }
 
-@media (max-width: 768px) {
+@media (width < 768px) {
   .fields-container {
     grid-template-columns: 1fr;
   }
