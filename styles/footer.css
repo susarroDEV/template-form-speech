@@ -1,0 +1,71 @@
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem 1.5rem;
+  margin-top: 3rem;
+  color: #DFDFDF;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  border-top: 3px solid #2784a7;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-thank {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #f0f0f0;
+}
+
+
+
+.footer-github {
+  margin: 0 .5rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.footer-github a {
+  color: #2784a7;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+.footer-github a:hover {
+  color: #ffffff;
+  background-color: #2784a7;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(39, 132, 167, 0.3);
+}
+
+.footer-github a span {
+  font-size: 1.2rem;
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-thank {
+    font-size: 1rem;
+  }
+}
