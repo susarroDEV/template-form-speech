@@ -2,7 +2,7 @@ export const formsConfig = {
   contact: {
     id: "contact-form",
     name: "Formulario de Contacto",
-    action: "/api/contact.json",
+    action: "https://api.forms.susarro.dev/api/contact.json",
     method: "POST",
     className: "contact-form",
     submitButtonText: "Enviar mensaje",
