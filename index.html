@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/styles/global.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/form-manager.css" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
@@ -31,9 +32,7 @@
       </a>
     </header>
     <main>
-      <p>
-        Aquí irá el formulario
-      </p>
+      <div id="main-form-container"></div>
     </main>
     <footer>
       <p>
@@ -53,5 +52,15 @@
         </a>
       </p>
     </footer>
+    
+    <!-- FormManager Script -->
+    <script type="module">
+      import FormManager from './src/form-manager/index.js';
+      
+      // Crear el formulario principal
+      const mainForm = new FormManager('main-form-container', 'contact', 'es');
+      
+      console.log('FormManager cargado correctamente!');
+    </script>
   </body>
 </html>
